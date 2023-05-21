@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscreenwallpaper"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/InicioDeSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp"
+        android:text="Inicio de Sesión"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NombreUsuario"
+        android:layout_below="@id/InicioDeSesion"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#44545125"
+        android:hint="Ingrese nombre de usuario aquí"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/baseline_perm_identity_24"
+        android:drawablePadding="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Contrasena"
+        android:layout_below="@id/NombreUsuario"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#44545125"
+        android:hint="Ingrese la contraseña asociada"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/baseline_security_24"
+        android:drawablePadding="25dp"/>
+
+    <CheckBox
+        android:id="@+id/Iniciar"
+        android:text="Guardar Sesión"
+        android:textColor="@color/white"
+        android:layout_below="@+id/Contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Boton"
+        android:layout_below="@+id/Iniciar"
+        android:text="Iniciar sesión"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:backgroundTint="@color/design_default_color_primary_variant"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Boton2"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@+id/Boton"
+        android:text="    Registrar    "
+        android:backgroundTint="@color/design_default_color_primary_variant"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fox"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Boton2"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="360dp"
+            android:src="@drawable/market"/>
+    </LinearLayout>
+</RelativeLayout>

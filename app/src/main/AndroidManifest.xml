@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Inventario_v2"
+        tools:targetApi="31">
+        <activity
+            android:name=".Buscar"
+            android:exported="false"
+            android:label="@string/title_activity_buscar"
+            android:theme="@style/Theme.Inventario_v2" />
+        <activity
+            android:name=".lista2"
+            android:exported="false"
+            android:label="@string/title_activity_lista2"
+            android:theme="@style/Theme.Inventario_v2" />
+        <activity
+            android:name=".TiendasConsulta"
+            android:exported="false"
+            android:label="@string/title_activity_tiendas_consulta"
+            android:theme="@style/Theme.Inventario_v2" />
+        <activity
+            android:name=".ListaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_lista"
+            android:theme="@style/Theme.Inventario_v2" />
+        <activity
+            android:name=".MostrarProductos"
+            android:exported="false"
+            android:label="@string/title_activity_mostrar_productos"
+            android:theme="@style/Theme.Inventario_v2" />
+        <activity
+            android:name=".Preferencias"
+            android:exported="false"
+            android:label="@string/title_activity_preferencias"
+            android:theme="@style/Theme.Inventario_v2" />
+        <activity
+            android:name=".InicioActivity"
+            android:exported="false"
+            android:label="@string/title_activity_inicio"
+            android:theme="@style/Theme.Inventario_v2" />
+        <activity
+            android:name=".LoginSession"
+            android:exported="false"
+            android:label="@string/title_activity_login_session"
+            android:theme="@style/Theme.Inventario_v2" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Inventario_v2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

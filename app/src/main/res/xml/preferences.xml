@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Preferencias de la app Inventario Javier">
+        <SwitchPreference
+            android:key="theme_preference"
+            android:defaultValue="true"
+            android:title="Tema Oscuro de la app" />
+        <SwitchPreference
+            android:key="Grilla"
+            android:defaultValue="true"
+            android:title="Usar modo Grilla"/>
+        <SwitchPreference
+            android:key="notificaciones"
+            android:defaultValue="false"
+            android:title="Activar Notificaciones"/>
+
+        <Preference
+            android:key="import_preference"
+            android:summary="Importar Base de Datos"
+            android:title="importar" />
+
+        <Preference
+            android:key="export_preference"
+            android:summary="Exportar la base de datos"
+            android:title="Exportar " />
+        <SwitchPreference
+            android:key="uwu"
+            android:defaultValue="false"
+            android:title="Musica de fondo"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Acerca de"/>
+        <Preference
+            android:title="Version del programa Inventario Javier"
+            android:summary="2.1.1"/>
+    <Preference
+        android:key="system"
+        android:title="Versión del sistema usado en Android Studio"
+        android:summary="Presione para mas información"/>
+        <Preference
+            android:key="informacion_contacto"
+            android:title="Acerca de nuestra empresa"
+            android:summary="Nuestra empresa Javier Industries, Inc es la mejor desarrollando software movil, presione para contactarnos"/>
+    <PreferenceCategory/>
+
+
+</PreferenceScreen>
